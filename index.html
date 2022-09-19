@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Formulário - Gui</title>
+    <link rel="stylesheet" href="estilo/estilo.css">
+
+</head>
+<body>
+    <h1 class="tituloPrincipal"> Modelo de formulário de vaga </h1>
+
+<div class="caixaForm">
+    <form method="post" action="formDemo.jsp"></form>
+        <fieldset>
+            <legend>Contato</legend>
+            <label for="">Nome:</label>
+            <input type="text"  id="nome" name="nome" required>
+            <br>
+            <br>
+            <label for="">E-mail:</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="">Celular:</label>
+            <input type="text" id="cel" name="cel" required>
+            <br>
+            <br>
+            <label for="">Site pessoal: </label>
+            <input type="url" id="site" name="site">
+            <br>
+            <br>
+            <label for="">Vaga desejada: </label>
+            <input type="text" id="opcaoVaga" name="opcaoVaga" required>
+            <br>
+            <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Habilidades básicas possuídas:</legend>
+            <div class="habilidades">
+                <input type="checkbox" id="skills" name="skills" value="skills">
+                <label for="skills">HTML</label>
+                <br>
+                <input type="checkbox" id="skills" name="skills" value="skills">
+                <label for="skills">CSS</label>
+                <br>
+                <input type="checkbox" id="skills" name="skills" value="skills">
+                <label for="skills">JavaScript</label>
+                <br>
+                <input type="checkbox" id="skills" name="skills" value="skills">
+                <label for="skills">node.js</label>
+                <br>
+                <input type="checkbox" id="skills" name="skills" value="skills">
+                <label for="skills">React</label>
+                <br>
+            </div>
+            <br>
+            <br>
+            <form action="" method="post" enctype="multipart/form-data">
+                Currículo: <input type="file" accept=".docx, .pdf">
+            </form>
+            <br>
+        </fieldset>
+        <br>
+        <fieldset class="tipoDeVaga">
+            <legend>Tipo de vaga:</legend>
+
+            <input type="radio" id="presencial" name="tipoDeVaga" value="presencial">
+            <label for="presencial">Presencial</label>
+
+            <input type="radio" id="remoto" name="tipoDeVaga" value="remoto">
+            <label for="remoto">Home Office</label>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Conte-nos um pouco mais sobre você:</legend>
+            <br>
+            <textarea wrap="off" cols="60" rows="10" placeholder="Histórias, vivências, experiências" id="textarea1"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Grau da capacidade de trabalhar em grupo:</legend>
+                <input type="range" min="0" max="100" value="50">
+        </fieldset>
+
+        <fieldset>
+            <legend>Mês da conclusão do último curso na área</legend>
+            <input type="month">
+        </fieldset>
+
+
+        <fieldset>
+            <input type="checkbox" name="Subscribe" id="subscribe" required>
+            <label for="subscribe">Li e concordo com os <a href=""> Termos de Uso </a> </label> <!--Link para os termos de uso-->
+            <br>
+            <input type="checkbox" name="Subscribe" id="subscribe" required>
+            <label for="subscribe">Afirmo ter a competência necessária para atuar na vaga</label>
+
+        </fieldset>
+        <fieldset>
+    <div class="botaoEnviar">
+        <button type="submit" id="send">Enviar</button>
+        <button type="reset" value="">Reiniciar o formulário</button>
+    </div>
+    </fieldset>
+       
+    </form>
+</div>
+
+<footer>
+    <p> &copy; guipupoalves</p>
+</footer>
+
+
+
+
+
+
+
+    <script src="javascript/javascript.js"></script>
+</body>
+</html>
