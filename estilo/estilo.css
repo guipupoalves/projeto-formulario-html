@@ -4,7 +4,7 @@
 }
 
 body{
-    background-image: url("/estilo/wp1.png");
+    background-image: url("estilo/wp1.png");
     background-repeat: repeat-y;
     background-size: cover;
     
